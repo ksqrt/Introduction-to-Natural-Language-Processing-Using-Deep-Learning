@@ -29,3 +29,31 @@ CUDA 와 CUDNN , TensorFlow 버전의 서로 간 호환성이 좋지 않기 때�
 ```bash
 docker pull datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815
 ```
+
+## **2 . 부족한 필수 라이브러리 설치**
+
+### 1. 젠심
+젠심(Gensim)은 머신 러닝을 사용하여 토픽 모델링과 자연어 처리 등을 수행할 수 있게 해주는 오픈 소스 라이브러리입니다. 
+
+```
+#  젠심 설치
+pip install gensim
+
+```
+### 2.  NLTK와 NLTK Data 설치
+엔엘티케이(NLTK)는 자연어 처리를 위한 파이썬 패키지입니다. 보통
+아나콘다에 설치되어있지만 이 환경에서는 없기 때문에 설치합니다
+
+```
+# NLTK와 NLTK Data 설치
+pip install nltk
+```
+
+### 3. KoNLPy 설치
+코엔엘파이(KoNLPy)는 한국어 자연어 처리를 위한 형태소 분석기 패키지입니다.
+우리는 한국인이기떄문에 ... 꼭 설치합시다
+
+```
+# KoNLPy 설치
+!pip install konlpy
+```
