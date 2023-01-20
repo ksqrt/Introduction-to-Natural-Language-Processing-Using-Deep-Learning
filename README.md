@@ -10,13 +10,26 @@ CUDA 와 CUDNN , TensorFlow 버전의 서로 간 호환성이 좋지 않기 때�
 미리 CUDA, CUDNN , TensorFlow 의 환경설정이 완료된 이미지를 
 도커허브에서 pull 해와서 사용 해보았습니다.
 
+
+
 사용된 이미지 
 
 https://hub.docker.com/r/datamachines/cudnn_tensorflow_opencv
 
+이미지의 버전 정리
+
+    도커태그 : 11.6.2_2.9.1_4.6.0-20220815
+    CUDA : 11.6.2
+    CUDNN : 8.4.0
+    TensorFlow : 2.9.1
+    OpenCV : 4.6.0
+    Ubuntu : 20.04
+    깃허브링크 : https://github.com/datamachines/cuda_tensorflow_opencv/tree/20220815
 
 명령어
+
 
 ```
 docker pull datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815
 ```
+
