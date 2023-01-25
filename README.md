@@ -51,9 +51,21 @@ pip install nltk
 
 ### 3. KoNLPy 설치
 코엔엘파이(KoNLPy)는 한국어 자연어 처리를 위한 형태소 분석기 패키지입니다.
-우리는 한국인이기떄문에 ... 꼭 설치합시다
+우리는 한국인이기떄문에 ... 꼭 설치합시다.
+
+```
+# KoNLPy를 위한 JAVA 설치
+apt install default-jdk
+```
 
 ```
 # KoNLPy 설치
-!pip install konlpy
+pip install konlpy
+```
+
+### 4. 판다스 프로파일링 설치
+
+EDA(Exploratory Data Analysis, 탐색적 데이터 분석)를 위한 라이브러리 설치
+```
+pip install -U pandas-profiling
 ```
