@@ -52,6 +52,8 @@ pip install nltk
 ### 3. KoNLPy 설치
 코엔엘파이(KoNLPy)는 한국어 자연어 처리를 위한 형태소 분석기 패키지입니다.
 우리는 한국인이기떄문에 ... 꼭 설치합시다.
+참고로 KoNLPy 의 경우 우분투 지원 버전이 다르지만 
+아직까지 문제 발생하지 않음 
 
 ```
 # KoNLPy를 위한 JAVA 설치
@@ -69,3 +71,5 @@ EDA(Exploratory Data Analysis, 탐색적 데이터 분석)를 위한 라이브�
 ```
 pip install -U pandas-profiling
 ```
+
+### 5.
