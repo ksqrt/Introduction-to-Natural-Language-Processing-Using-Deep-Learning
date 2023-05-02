@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const data = [
+      { id: 1, name: "홍길동", age: "25" },
+      { id: 2, name: "프로도", age: "35" },
+      { id: 3, name: "라이언", age: "30" },
+    ];
+    const arr = [10, 20, 30, 40, 50, 60];
+    const result = arr.find((item) => item > 30);
+    console.log(result);
+
+    const result2 = arr.find((item) => item === 30);
+    console.log(result2);
+
+    //인덱스를 찾는 메서드
+    const result3 = arr.findIndex((item) => item === 30);
+    console.log(result3);
+
+    //id 가 1인 값 찾기
+    const result4 = data.find((item) => item.id === 1);
+    console.log(result4);
+
+    //id 가 1인 값 찾기
+    const result5 = data.find((item) => item.name === "어파치");
+    console.log(result5);
+  </script>
+</html>
+<!-- filter 와 find 는 비슷하지만 find 는 하나만 찾고 끝냄 -->

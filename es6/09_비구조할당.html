@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const dog = {
+        name: "멍멍이",
+        age: 2,
+      };
+      console.log(dog.name, dog.age);
+      console.log(dog["name"], dog["age"]);
+      const { name, age } = dog;
+      console.log(name, age);
+
+      //비구조 할당
+      const data = {
+        name2: "홍길동",
+        kor: 100,
+        eng: 85,
+        math: 90,
+      };
+
+      console.log(data.name2, data.kor, data.eng, data.math);
+      console.log(data["name2"], data["kor"], data["end"], data["math"]);
+
+      //비 구조 할 당
+    </script>
+  </body>
+</html>

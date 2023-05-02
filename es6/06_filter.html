@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const arr = [10, 20, 30, 40, 50, 60];
+
+    // 요소중에서 30보다 큰 값만 추출
+    const result = arr.filter((item) => item > 30);
+    console.log(result);
+
+    // 요소 중에서 40인 값만 추출
+    const result2 = arr.filter((item) => item === 40);
+    console.log(result2);
+
+    // 요소 중에서 40이 아닌값만 추출
+    const result3 = arr.filter((item) => item != 40);
+    console.log(result3);
+  </script>
+</html>
+<!-- 
+filter도 map함수와 마찬가지로 콜백함수를 인자로 받는데 모든 원소를 한 번씩 돌리면서 
+콜백함수의 몸체 부분에서 true를 반환하는 원소들만 걸러준 결과 배열
+
+[형식]
+const newArr = arr.filter( 현재값 => 조건 )
+ -->

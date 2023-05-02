@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    const arr = [10, 20, 30];
+    arr.push(40);
+    arr.push(50);
+    arr.push(60);
+    console.log(arr);
+    const arr1 = [10, 20, 30];
+    const arr2 = arr.concat(arr1);
+
+    console.log(arr2);
+    const arr3 = arr1.concat(40, 50, 60);
+
+    const data = [
+      { id: 1, name: "홍길동", age: "25" },
+      { id: 2, name: "프로도", age: "35" },
+      { id: 3, name: "라이언", age: "30" },
+    ];
+
+    arr.map - [console.log(data[1])];
+
+    data.map((item, index) => console.log(item.id, item.name, item.age));
+
+    const result3 = data.filter((item) => item.name === "홍길동");
+    console.log(result3);
+
+    const result4 = data.filter((item) => item.id === 2);
+    console.log(result4);
+  </script>
+</html>
