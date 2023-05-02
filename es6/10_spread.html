@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const arr = ['강아지','강아지','토끼','펭귄']
+        const arr2 = arr.concat()
+        const arr3 = [...arr]
+        console.log(arr2)
+        console.log(arr3)
+
+        //추가 
+        const arr4 = arr.concat('코끼리','기린')
+
+        console.log('arr = '+arr)
+        console.log('arr2 = '+arr2)
+        console.log('arr3 = '+arr3)
+        console.log('arr4 = '+arr4)
+
+        const arr5 = [...arr,'코끼리','기린']
+        const arr6 = ['코끼리',...arr,'기린']
+        const arr7 = ['코끼리','기린',...arr]
+        console.log(arr5)
+        console.log(arr6)
+        console.log(arr7)
+
+        // 스프레드연산자 특 배열에서는 추가되지만, 객체에서는 덮어씀
+        const dog = {
+            name : '멍멍이',
+            age : 2
+        }
+        const dog2 = {...dog, name:'진돗개',age:5}
+
+        console.log(dog2)
+
+    </script>
+</body>
+</html>
